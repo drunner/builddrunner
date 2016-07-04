@@ -7,7 +7,8 @@ RUN apt-get update && \
       apt-get -y install \
       build-essential g++-multilib \
       libboost-all-dev libyaml-cpp-dev \
-      apt-transport-https ca-certificates wget && \
+      apt-transport-https ca-certificates \
+      wget bc && \
       rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /poco && cd /poco && export POCOVER="poco-1.7.3" && \
