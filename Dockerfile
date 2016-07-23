@@ -8,6 +8,7 @@ RUN apt-get update && \
       build-essential g++-multilib \
       libboost-all-dev libyaml-cpp-dev \
       apt-transport-https ca-certificates \
+      cmake \
       wget bc && \
       rm -rf /var/lib/apt/lists/*
 
@@ -24,4 +25,3 @@ RUN mkdir /poco && cd /poco && export POCOVER="poco-1.7.3" && \
 VOLUME ["/source"]
 
 WORKDIR /source
-CMD make -j4
