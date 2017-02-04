@@ -12,7 +12,7 @@ RUN apt-get update && \
       wget bc && \
       rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /poco && cd /poco && export POCOVER="poco-1.7.3" && \
+RUN mkdir /poco && cd /poco && export POCOVER="poco-1.7.7-all" && \
     wget http://pocoproject.org/releases/${POCOVER}/${POCOVER}.tar.gz && \
     gunzip ${POCOVER}.tar.gz && \
     tar xf ${POCOVER}.tar && \
