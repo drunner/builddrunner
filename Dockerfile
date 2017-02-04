@@ -7,6 +7,7 @@ RUN apt-get update && \
       apt-get -y install \
       build-essential g++-multilib \
       libboost-all-dev libyaml-cpp-dev \
+      libssl-dev \
       apt-transport-https ca-certificates \
       cmake \
       wget bc && \
