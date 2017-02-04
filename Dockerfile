@@ -16,7 +16,7 @@ RUN mkdir /poco && cd /poco && export POCOVER="poco-1.7.7" && \
     wget http://pocoproject.org/releases/${POCOVER}/${POCOVER}-all.tar.gz && \
     gunzip ${POCOVER}-all.tar.gz && \
     tar xf ${POCOVER}-all.tar && \
-    cd ${POCOVER} && \
+    cd ${POCOVER}-all && \
     ./configure --static && \
     make -j4 && \
     make install && \
